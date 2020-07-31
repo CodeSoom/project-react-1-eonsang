@@ -6,7 +6,11 @@ import emotionReset from "emotion-reset";
 const initialStyle = css`
   ${emotionReset}
 
-  html, body {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
     background: #efefef;
   }
 

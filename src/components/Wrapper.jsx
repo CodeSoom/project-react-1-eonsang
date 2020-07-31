@@ -12,6 +12,7 @@ const Container = styled.div`
   margin: 0 auto;
   background: #fff;
   min-height: 100vh;
+  padding-bottom: 60px;
 `;
 
 export default function Wrapper({ children }) {
