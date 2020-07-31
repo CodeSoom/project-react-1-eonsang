@@ -1,10 +1,20 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-export default function App({ title = "Hello!" }) {
-  return <div>Hello!</div>;
+import { Switch, Route } from "react-router-dom";
+
+import Home from "./containers/Home";
+
+import Wrapper from "./components/Wrapper";
+import Navigation from "./components/Navigation";
+
+export default function App() {
+  return (
+    <Wrapper>
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+
+      <Navigation />
+    </Wrapper>
+  );
 }
-
-App.propTypes = {
-  name: PropTypes.string,
-};
